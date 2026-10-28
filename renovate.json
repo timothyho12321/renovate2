@@ -9,9 +9,8 @@
   "automergeType": "pr",
   "platformAutomerge": true,
   "timezone": "Asia/Singapore",
-  "minimumReleaseAge": "30 days",
   "packageRules": [
-    {
+    {"matchCurrentAge": "> 6 months",
       "matchUpdateTypes": ["major", "minor", "patch"],
       "matchConfidence": ["high", "very high"],
       "groupName": "all updates"
