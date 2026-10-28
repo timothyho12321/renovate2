@@ -12,7 +12,6 @@
   "packageRules": [
     {"matchCurrentAge": "> 6 months",
       "matchUpdateTypes": ["major", "minor", "patch"],
-      "matchConfidence": ["high", "very high"],
       "groupName": "all updates"
     }
   ],
