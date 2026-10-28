@@ -1,0 +1,22 @@
+name: Renovate Auto Scan
+
+on:
+  schedule:
+    # GitHub Actions uses UTC. 
+    # 1:14 PM in Asia/Singapore (UTC+8) is 5:14 AM UTC.
+    - cron: '30 5 * * *'
+  workflow_dispatch: # Allows you to manually trigger the scan from the GitHub UI
+
+jobs:
+  renovate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Self-hosted Renovate
+        uses: renovatebot/github-action@v40.1.11
+        env:
+          # You need to create a GitHub Personal Access Token (PAT) 
+          # with 'repo' scope and add it to your repository secrets
+          RENOVATE_TOKEN: ${{ secrets.RENOVATE_TOKEN }}
