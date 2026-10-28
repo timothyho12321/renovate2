@@ -13,5 +13,6 @@
       "groupName": "all updates" 
     }
   ],
+  "prHourlyLimit": 0,
   "labels": ["dependencies", "renovate"]
 }
