@@ -2,9 +2,9 @@ name: Renovate Auto Scan
 
 on:
   schedule:
-    # GitHub Actions uses UTC. 
-    # 1:14 PM in Asia/Singapore (UTC+8) is 5:14 AM UTC.
-    - cron: '37 5 * * *'
+    # GitHub Actions uses UTC.
+    # 1:39 PM in Asia/Singapore (UTC+8) is 5:39 AM UTC.
+    - cron: '54 5 * * *'
   workflow_dispatch: # Allows you to manually trigger the scan from the GitHub UI
 
 jobs:
@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
+        
       - name: Self-hosted Renovate
         uses: renovatebot/github-action@v40.1.11
         env:
