@@ -8,7 +8,7 @@
   "automerge": true,
   "automergeType": "pr",
   "platformAutomerge": true,
-  "schedule": ["at 1:10pm"],
+  "schedule": ["at 1:14pm"],
   "timezone": "Asia/Singapore",
   "minimumReleaseAge": "30 days",
   "packageRules": [
